@@ -1,0 +1,13 @@
+<% @cartitems.each do |e| %>
+    <p>
+        商品名：<%= Product.find(e.product_id).name %>
+    </p>    
+    
+    <p>
+        価格：<%= Product.find(e.product_id).price %>
+    </p>
+    
+    <p>
+        数量：<%= e.qty %>
+    </p>
+<% end %>
